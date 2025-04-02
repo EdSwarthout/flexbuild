@@ -613,8 +613,9 @@ check_debian_version() {
 check_host_dependent_pkg() {
     for pkg in $host_dependent_packages; do
 	if ! dpkg-query -l $pkg | grep -q ii; then
-	    [ "$aptupdatedone" != y ] && sudo apt autoclean && sudo apt-get update && aptupdatedone=y
-	    echo installing $pkg ... && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $pkg
+	    echo "Missing package $pkg"
+#	    [ "$aptupdatedone" != y ] && sudo apt autoclean && sudo apt-get update && aptupdatedone=y
+#	    echo installing $pkg ... && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $pkg
 	fi
     done
 
