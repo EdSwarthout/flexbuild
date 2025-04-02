@@ -27,6 +27,7 @@ linux:
 	    locarch=arm; dtbstr=imx*.dtb; \
 	fi && \
 	opdir=$(KERNEL_OUTPUT_PATH)/$$curbrch && mkdir -p $$opdir/tmp && \
+	$(call fbprint_n,"opdir=$$opdir") && \
 	if [ "$(BUILDARG)" = "custom" ]; then \
 	    $(MAKE) menuconfig -C $(KERNEL_PATH) O=$$opdir && \
 	    $(call fbprint_d,"Custom kernel config: $$opdir/.config") && \
@@ -55,6 +56,7 @@ linux:
 	    cp -f $$opdir/arch/$$locarch/boot/zImage $(FBOUTDIR)/linux/$(KERNEL_TREE)/$(DESTARCH)/$(SOCFAMILY); \
 	fi && \
 	$(MAKE) -j$(JOBS) modules -C $(KERNEL_PATH) O=$$opdir && \
+	$(call fbprint_n,"INSTALL_MOD_PATH=opdir/tmp=$$opdir/tmp") && \
 	$(MAKE) -j$(JOBS) modules_install INSTALL_MOD_PATH=$$opdir/tmp -C $(KERNEL_PATH) O=$$opdir && \
 	ls $$opdir/arch/$$locarch/boot/dts/$$dtbstr | xargs -I {} cp {} $(FBOUTDIR)/linux/$(KERNEL_TREE)/$(DESTARCH)/$(SOCFAMILY) && \
 	ls -l $(FBOUTDIR)/linux/$(KERNEL_TREE)/$(DESTARCH)/$(SOCFAMILY) && \
