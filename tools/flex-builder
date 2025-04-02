@@ -611,7 +611,7 @@ check_debian_version() {
 
 
 check_host_dependent_pkg() {
-    for pkg in $host_dependent_packages; do
+    for pkg in $host_dependent_packages $host_dependent_packages.$HOSTARCH; do
 	if ! dpkg-query -l $pkg | grep -q ii; then
 	    echo "Missing package $pkg"
 #	    [ "$aptupdatedone" != y ] && sudo apt autoclean && sudo apt-get update && aptupdatedone=y
