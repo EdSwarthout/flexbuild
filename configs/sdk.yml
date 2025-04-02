@@ -173,8 +173,8 @@ repo:
   dpdk:
     url:  https://github.com/nxp-qoriq/dpdk.git
 
-  vpp:
-    url:  https://github.com/nxp-qoriq/vpp.git
+#  vpp:
+#    url:  https://github.com/nxp-qoriq/vpp.git
 
   ovs_dpdk:
     url:  https://github.com/nxp-qoriq/ovs-dpdk.git
