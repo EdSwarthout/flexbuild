@@ -18,3 +18,4 @@ include cryptodev_linux.mk
 include lttng_modules.mk
 include mdio_proxy_module.mk
 include isp_vvcam_module.mk
+include gasket_module.mk

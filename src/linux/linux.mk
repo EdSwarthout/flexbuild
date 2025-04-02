@@ -65,7 +65,7 @@ linux:
 
 
 
-linux-modules: nxp_wlan_bt cryptodev_linux mdio_proxy_module isp_vvcam_module
+linux-modules: nxp_wlan_bt cryptodev_linux mdio_proxy_module isp_vvcam_module gasket_module
 	 $(call fbprint_d,"linux-modules")
 
 
