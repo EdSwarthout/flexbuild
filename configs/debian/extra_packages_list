@@ -28,8 +28,8 @@ host_dependent_packages=" \
     rename qt6-declarative-dev \
 "
 
-host_dependent_packages.aarch64="gcc g++"
-host_dependent_packages.x86_64="gcc-aarch64-linux-gnu g++-aarch64-linux-gnu"
+host_dependent_packages_aarch64="gcc g++"
+host_dependent_packages_x86_64="gcc-aarch64-linux-gnu g++-aarch64-linux-gnu"
 
 
 # To install extra devel packages dependencies needed for compiling NXP-specific
