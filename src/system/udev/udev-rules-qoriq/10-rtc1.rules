@@ -1,0 +1,3 @@
+# select "system RTC" or just use the first one
+SUBSYSTEM=="rtc", ATTR{hctosys}=="1", SYMLINK+="rtc"
+SUBSYSTEM=="rtc", KERNEL=="rtc1", SYMLINK+="rtc", OPTIONS+="link_priority=-100"
