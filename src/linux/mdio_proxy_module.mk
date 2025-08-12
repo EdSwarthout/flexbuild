@@ -17,5 +17,8 @@ mdio_proxy_module:
 	 cd $(PKGDIR)/linux/mdio_proxy_module && \
 	 $(call fbprint_b,"mdio-proxy-module") && \
 	 $(MAKE) -j$(JOBS) KBUILD_DIR=$(KERNEL_PATH) O=$$opdir $(LOG_MUTE) && \
-	 cp -f mdio-proxy.ko $$opdir/tmp/lib/modules/*/kernel/drivers/net/mdio/ && \
+	 tmpdir=`echo $$opdir/tmp/lib/modules/*/kernel/drivers/net/` && \
+	 mkdir -p $$tmpdir/mdio/ && \
+	 echo cp -f mdio-proxy.ko $$tmpdir/mdio/ && \
+	 cp -f mdio-proxy.ko $$tmpdir/mdio/ && \
 	 $(call fbprint_d,"mdio_proxy_module")
