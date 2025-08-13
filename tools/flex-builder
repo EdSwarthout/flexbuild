@@ -606,8 +606,9 @@ check_debian_version() {
 check_host_dependent_pkg() {
 	fbprint_n "Prepare the build environment on host ..."
 
-    log_mute sudo apt-get autoclean && log_mute sudo apt-get update -y
-    log_mute sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $host_dependent_packages
+#    log_mute sudo apt-get autoclean && log_mute sudo apt-get update -y
+	#    log_mute sudo DEBIAN_FRONTEND=noninteractive apt-get install -y $host_dependent_packages
+echo apt-get install -y $host_dependent_packages
 
     if [ ! -f ~/.gitconfig ] || [[ ! `grep 'name =' ~/.gitconfig` ]]; then
         echo [user] > ~/.gitconfig
