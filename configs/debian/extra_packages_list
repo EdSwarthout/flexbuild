@@ -48,6 +48,7 @@ extra_server_devel_packages=" \
     python3-lxml libflatbuffers-dev libcpuinfo-dev libwaffle-dev libpciaccess-dev \
     liborc-0.4-dev libbluetooth-dev libpangocairo-1.0-0 libcogl-pango-dev libvorbis-dev \
     libjpeg62-turbo-dev libjsoncpp-dev dbus-user-session hostapd \
+    libbsd-dev \
 "
 
 extra_desktop_devel_packages=" \
