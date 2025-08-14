@@ -1,0 +1,24 @@
+From 4c2d29598c01488c4b038e847d235fa2be81b1f7 Mon Sep 17 00:00:00 2001
+From: Nicola Ferralis <feranick@hotmail.com>
+Date: Mon, 4 Aug 2025 14:51:13 -0400
+Subject: [PATCH 3/5] Add dh-dkms dependency to build package
+
+---
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/debian/control b/debian/control
+index ba07931..4dd491c 100644
+--- a/debian/control
++++ b/debian/control
+@@ -1,6 +1,6 @@
+ Source: gasket-dkms
+ Maintainer: Coral <coral-support@google.com>
+-Build-Depends: debhelper (>= 9), dkms
++Build-Depends: debhelper (>= 9), dkms, dh-dkms
+ Homepage: https://coral.withgoogle.com/
+ 
+ Package: gasket-dkms
+-- 
+2.51.0
+

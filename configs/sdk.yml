@@ -182,6 +182,9 @@ repo:
   nxp_wlan_bt:
     url:  https://github.com/nxp-imx/mwifiex.git
 
+  gasket_driver:
+    url:  https://github.com/google/gasket-driver.git
+    tag:  5815ee3908a
 
 
 # networking component repositories
