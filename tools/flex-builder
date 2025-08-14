@@ -354,7 +354,7 @@ merge_apps() {
             ls -d $DESTDIR/* | grep -v -E "lib|bin|sbin" | xargs -I {} sudo cp -Prf --preserve=mode,timestamps {} $RFSDIR/
         fi
         [ $DESTARCH = arm64 ] && tgtarch=aarch64 || tgtarch=arm
-        if update-binfmts --display qemu-$tgtarch 2>/dev/null | grep -q disabled; then
+        if [ $HOSTARCH != $tgtarch ] && update-binfmts --display qemu-$tgtarch 2>/dev/null | grep -q disabled; then
             log_mute sudo update-binfmts --enable qemu-$tgtarch
         fi
         sudo chroot $RFSDIR ldconfig
