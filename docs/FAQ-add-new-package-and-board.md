@@ -20,6 +20,8 @@ e.g.
    (user can locally create the new component Git repository in components/apps/\<subsystem\>/\<component\> directory in case
     there is no available remote git repository)
 
+   Note: If the UPDATE_REPO_PER_TAG is set, the package repo must specify a tag or have a tag matching DEFAULT_REPO_TAG.
+
 2. Create a makefile file src/apps/\<subsystem\>/hello_world.mk to add the build object for this component, e.g.
 ```
    $ vi src/apps/gopoint/hello_world.mk
