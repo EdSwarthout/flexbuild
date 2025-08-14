@@ -157,6 +157,9 @@ repo:
   isp_vvcam_module:
     url:  https://github.com/nxp-imx/isp-vvcam.git
 
+  gasket_driver:
+    url:  https://github.com/google/gasket-driver.git
+    tag:  5815ee3908a
 
 # networking component repositories
   restool:
