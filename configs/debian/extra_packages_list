@@ -37,17 +37,67 @@ host_dependent_packages=" \
 
 
 extra_server_devel_packages=" \
-    libxml2-dev libtinyxml2-9 libssl-dev libsbc-dev libsndfile1-dev libwebp-dev \
-    dh-autoreconf libnuma-dev libpcap-dev libtclap-dev libncurses5-dev libelf-dev \
-    libnl-genl-3-dev libreadline-dev libffi-dev libudev-dev libinput-dev libpixman-1-dev \
-    libxkbcommon-dev libpng-dev libcairo2-dev libpam0g-dev liblua5.3-dev libsystemd-dev \
-    libxcb-composite0-dev libxcursor-dev libxcb-cursor-dev libseat-dev seatd libtinfo-dev \
-    libusb-1.0-0-dev libexif-dev libxv-dev libtheora-dev libcjson-dev libmnl-dev \
-    uuid-dev libpython3.11-dev python3-pip python3-pybind11 python3-numpy python3-pillow \
-    python3-flatbuffers python3-decorator python3-numpy python3-attr python3-psutil \
-    python3-lxml libflatbuffers-dev libcpuinfo-dev libwaffle-dev libpciaccess-dev \
-    liborc-0.4-dev libbluetooth-dev libpangocairo-1.0-0 libcogl-pango-dev libvorbis-dev \
-    libjpeg62-turbo-dev libjsoncpp-dev dbus-user-session hostapd \
+    libxml2-dev \
+    libtinyxml2-9 \
+    libssl-dev \
+    libsbc-dev \
+    libsndfile1-dev \
+    libwebp-dev \
+    dh-autoreconf \
+    libnuma-dev \
+    libpcap-dev \
+    libtclap-dev \
+    libncurses5-dev \
+    libelf-dev \
+    libnl-genl-3-dev \
+    libreadline-dev \
+    libffi-dev \
+    libudev-dev \
+    libinput-dev \
+    libpixman-1-dev \
+    libxkbcommon-dev \
+    libpng-dev \
+    libcairo2-dev \
+    libpam0g-dev \
+    liblua5.3-dev \
+    libsystemd-dev \
+    libxcb-composite0-dev \
+    libxcursor-dev \
+    libxcb-cursor-dev \
+    libseat-dev \
+    seatd \
+    libtinfo-dev \
+    libusb-1.0-0-dev \
+    libexif-dev \
+    libxv-dev \
+    libtheora-dev \
+    libcjson-dev \
+    libmnl-dev \
+    uuid-dev \
+    libpython3.11-dev \
+    python3-pip \
+    python3-pybind11 \
+    python3-numpy \
+    python3-pillow \
+    python3-flatbuffers \
+    python3-decorator \
+    python3-numpy \
+    python3-attr \
+    python3-psutil \
+    python3-lxml \
+    libflatbuffers-dev \
+    libcpuinfo-dev \
+    libwaffle-dev \
+    libpciaccess-dev \
+    liborc-0.4-dev \
+    libbluetooth-dev \
+    libpangocairo-1.0-0 \
+    libcogl-pango-dev \
+    libvorbis-dev \
+    libjpeg62-turbo-dev \
+    libjsoncpp-dev \
+    dbus-user-session \
+    hostapd \
     libbsd-dev \
     check \
 "
