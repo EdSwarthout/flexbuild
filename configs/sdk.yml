@@ -171,24 +171,24 @@ repo:
   spc:
     url:  https://github.com/nxp-qoriq/spc.git
 
-  tsntool:
-    url:  https://github.com/nxp-qoriq/tsntool.git
+# tsntool:
+#   url:  https://github.com/nxp-qoriq/tsntool.git
 
-  dpdk:
-    url:  https://github.com/nxp-qoriq/dpdk.git
+# dpdk:
+#   url:  https://github.com/nxp-qoriq/dpdk.git
 
-  vpp:
-    url:  https://github.com/nxp-qoriq/vpp.git
+# vpp:
+#   url:  https://github.com/nxp-qoriq/vpp.git
 
-  ovs_dpdk:
-    url:  https://github.com/nxp-qoriq/ovs-dpdk.git
+# ovs_dpdk:
+#   url:  https://github.com/nxp-qoriq/ovs-dpdk.git
 
-  pktgen_dpdk:
-    url:  https://github.com/pktgen/pktgen-dpdk.git
-    tag:  pktgen-23.06.1
+# pktgen_dpdk:
+#   url:  https://github.com/pktgen/pktgen-dpdk.git
+#   tag:  pktgen-23.06.1
 
-  mtcp_dpdk:
-    url:  https://github.com/nxpmicro/mtcp.git
+# mtcp_dpdk:
+#   url:  https://github.com/nxpmicro/mtcp.git
 
   aiopsl: 
     url:  https://github.com/nxp-qoriq/aiopsl.git
