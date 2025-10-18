@@ -17,7 +17,7 @@ mmdebstrap:
   mirrors:
     - http://ftp.cn.debian.org/debian
     - http://ftp.de.debian.org/debian
-  suite: bookworm
+  suite: trixie
   target: rootfs
   hostname: localhost
   variant: standard
@@ -56,7 +56,7 @@ mmdebstrap:
     - lshw
     - keyutils
     - wpasupplicant
-    - ntpdate
+    - ntpsec-ntpdate
     - bridge-utils
     - tcpdump
     - mtd-utils
