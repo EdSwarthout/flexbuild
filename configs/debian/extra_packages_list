@@ -37,69 +37,69 @@ host_dependent_packages=" \
 
 
 extra_server_devel_packages=" \
-    libxml2-dev \
-    libtinyxml2-9 \
-    libssl-dev \
-    libsbc-dev \
-    libsndfile1-dev \
-    libwebp-dev \
+    check \
+    dbus-user-session \
     dh-autoreconf \
-    libnuma-dev \
-    libpcap-dev \
-    libtclap-dev \
-    libncurses5-dev \
-    libelf-dev \
-    libnl-genl-3-dev \
-    libreadline-dev \
-    libffi-dev \
-    libudev-dev \
-    libinput-dev \
-    libpixman-1-dev \
-    libxkbcommon-dev \
-    libpng-dev \
-    libcairo2-dev \
-    libpam0g-dev \
-    liblua5.3-dev \
-    libsystemd-dev \
-    libxcb-composite0-dev \
-    libxcursor-dev \
-    libxcb-cursor-dev \
-    libseat-dev \
-    seatd \
-    libtinfo-dev \
-    libusb-1.0-0-dev \
-    libexif-dev \
-    libxv-dev \
-    libtheora-dev \
-    libcjson-dev \
-    libmnl-dev \
-    uuid-dev \
-    libpython3.11-dev \
-    python3-pip \
-    python3-pybind11 \
-    python3-numpy \
-    python3-pillow \
-    python3-flatbuffers \
-    python3-decorator \
-    python3-numpy \
-    python3-attr \
-    python3-psutil \
-    python3-lxml \
-    libflatbuffers-dev \
-    libcpuinfo-dev \
-    libwaffle-dev \
-    libpciaccess-dev \
-    liborc-0.4-dev \
+    hostapd \
     libbluetooth-dev \
-    libpangocairo-1.0-0 \
+    libbsd-dev \
+    libcairo2-dev \
+    libcjson-dev \
     libcogl-pango-dev \
-    libvorbis-dev \
+    libcpuinfo-dev \
+    libelf-dev \
+    libexif-dev \
+    libffi-dev \
+    libflatbuffers-dev \
+    libinput-dev \
     libjpeg62-turbo-dev \
     libjsoncpp-dev \
-    dbus-user-session \
-    hostapd \
-    libbsd-dev \
-    check \
+    liblua5.3-dev \
+    libmnl-dev \
+    libncurses5-dev \
+    libnl-genl-3-dev \
+    libnuma-dev \
+    liborc-0.4-dev \
+    libpam0g-dev \
+    libpangocairo-1.0-0 \
+    libpcap-dev \
+    libpciaccess-dev \
+    libpixman-1-dev \
+    libpng-dev \
+    libpython3.11-dev \
+    libreadline-dev \
+    libsbc-dev \
+    libseat-dev \
+    libsndfile1-dev \
+    libssl-dev \
+    libsystemd-dev \
+    libtclap-dev \
+    libtheora-dev \
+    libtinfo-dev \
+    libtinyxml2-9 \
+    libudev-dev \
+    libusb-1.0-0-dev \
+    libvorbis-dev \
+    libwaffle-dev \
+    libwebp-dev \
+    libxcb-composite0-dev \
+    libxcb-cursor-dev \
+    libxcursor-dev \
+    libxkbcommon-dev \
+    libxml2-dev \
+    libxv-dev \
+    python3-attr \
+    python3-decorator \
+    python3-flatbuffers \
+    python3-lxml \
+    python3-numpy \
+    python3-numpy \
+    python3-pillow \
+    python3-pip \
+    python3-psutil \
+    python3-pybind11 \
+    seatd \
+    uuid-dev \
 "
 
 extra_desktop_devel_packages=" \
