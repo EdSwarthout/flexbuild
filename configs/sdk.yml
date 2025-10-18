@@ -15,25 +15,25 @@ DEBIAN_VERSION:  "13"
 # default build options for CI auto build
 BUILD_DEBIAN_BASE: n
 BUILD_DEBIAN_SERVER: y
-BUILD_DEBIAN_DESKTOP: y
+BUILD_DEBIAN_DESKTOP: n
 BUILD_YOCTO_RFS: n
 BUILD_BUILDROOT_RFS: n
 
 # enable/disable custom packagegroups
-PKG_GROUPS_GRAPHICS: y
-PKG_GROUPS_MULTIMEDIA: y
+PKG_GROUPS_GRAPHICS: n
+PKG_GROUPS_MULTIMEDIA: n
 PKG_GROUPS_NETWORKING: y
 PKG_GROUPS_UTILS: y
 PKG_GROUPS_SECURITY: y
-PKG_GROUPS_ML: y
-PKG_GROUPS_GOPOINT: y
+PKG_GROUPS_ML: n
+PKG_GROUPS_GOPOINT: n
 PKG_GROUPS_ROBOTICS: n
 
 # default IMX if '-p' option is not specified, change to LS for Layerscape SoC
-DEFAULT_SOC_FAMILY: IMX
+DEFAULT_SOC_FAMILY: LS
 
 # force build in docker environment
-FORCE_BUILD_IN_DOCKER: y
+FORCE_BUILD_IN_DOCKER: n
 
 # choose one of the 3 ways to fetch/update repo for various use cases
 UPDATE_REPO_PER_TAG: y
