@@ -591,7 +591,7 @@ check_host_dependent_pkg() {
     check_toolchain && touch $FBDIR/logs/$nflag
 
     # for creating .deb package
-    log_mute gem install fpm
+    log_mute sudo gem install fpm
 
     # for imx95 m core toolchain
     if [ ! -d /usr/arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi/bin ] && [[ "$MACHINE" =~ ^imx(95|94) ]]; then
