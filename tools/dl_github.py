@@ -257,7 +257,8 @@ def download_and_process(
         os.makedirs(extracted_dir)
         try:
             with tarfile.open(temp_file, "r:gz") as tar:
-                tar.extractall(extracted_dir, filter='data')
+                tar.extractall(extracted_dir)
+#               tar.extractall(extracted_dir, filter='data')
         except tarfile.AbsoluteLinkError:
             try:
                 subprocess.run(
