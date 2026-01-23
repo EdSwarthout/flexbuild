@@ -29,7 +29,7 @@ dpdk:
 	 export PKG_CONFIG_SYSROOT_DIR=$(RFSDIR) && \
 	 export PKG_CONFIG_LIBDIR=$(RFSDIR)/usr/lib/aarch64-linux-gnu/pkgconfig:$(RFSDIR)/usr/lib/pkgconfig && \
 	 export LIBRARY_PATH="$(RFSDIR)/usr/lib/aarch64-linux-gnu:$(RFSDIR)/usr/lib:$$LIBRARY_PATH" && \
-	 export LD_LIBRARY_PATH="$(RFSDIR)/usr/lib/aarch64-linux-gnu:$(RFSDIR)/usr/lib:$$LD_LIBRARY_PATH" && \
+#	 export LD_LIBRARY_PATH="$(RFSDIR)/usr/lib/aarch64-linux-gnu:$(RFSDIR)/usr/lib:$$LD_LIBRARY_PATH" && \
 	 cd $(NETDIR)/dpdk && \
 	 build_dir=build_$(DISTROTYPE)_$(ARCH) && \
 	 rm -rf $$build_dir && \
