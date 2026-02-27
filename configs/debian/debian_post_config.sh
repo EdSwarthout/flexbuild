@@ -114,6 +114,7 @@ printf "%s %s (optimized with NXP-specific hardware acceleration)\n" \
 # echo "[POST_ROOTFS] Board-specific configuration"
 
 mkdir -p "$ROOTDIR"/etc/xdg/weston
+echo "FBDIR=$FBDIR"
 cp -f "$FBDIR"/src/system/weston/weston.ini* "$ROOTDIR"/etc/xdg/weston/
 
 #echo "[POST_ROOTFS] Finished"
