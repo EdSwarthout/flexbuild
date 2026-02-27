@@ -63,7 +63,7 @@ linux-modules: cryptodev_linux mdio_proxy_module isp_vvcam_module nxp_wlan_bt ga
 
 
 linux-headers:
-	@$(call download_repo,linux,linux) && \
+	$(call download_repo,linux,linux) && \
 	 cd $(PKGDIR)/linux && \
 	 opdir=$(KERNEL_OUTPUT_PATH)/$(KERNEL_BRANCH) && mkdir -p $$opdir/tmp && \
 	 mkdir -p $(DESTDIR)/usr && \
