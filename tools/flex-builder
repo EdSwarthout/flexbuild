@@ -765,7 +765,7 @@ NC='\e[0m'
 [ $# -eq 0 ] && usage && exit
 DESTARCH=arm64
 #LS_MACHINE_LIST=`grep -r 'machine=' $FBDIR/configs/board | grep -E '=ls|=lx' | cut -d= -f2 | sed -e '/qds/d' | xargs echo`
-LS_MACHINE_LIST="ls1043ardb ls1046ardb ls1028ardb lx2160ardb ls1046afrwy"
+LS_MACHINE_LIST="ls1046ardb lx2160ardb ls1046afrwy"
 #IMX_MACHINE_LIST=`grep -r 'machine=' $FBDIR/configs/board | grep -E '=imx' | cut -d= -f2 | xargs echo`
 IMX_MACHINE_LIST="imx8mpfrdm imx8mpevk imx8mmevk imx8qmmek imx91frdm imx91evk imx91sfrdm imx93evk imx93frdm imx95frdm imx95evk"
 
